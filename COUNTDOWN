@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FICARQ´24</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            padding: 20px;
+        }
+        .title {
+            font-size: 2.5em;
+            margin-top: 20px;
+        }
+        .subtitle {
+            font-size: 1 em;
+            margin-bottom: 20px;
+        }
+        .countdown {
+            font-size: 2em;
+            margin-top: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .more-info {
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+        .more-info a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://festhomedocs.com/festivals/1916/logo-uncut-1916.jpg" alt="FICARQ´24">
+        <div class="title">FICARQ´24</div>
+        <div class="subtitle">FESTIVAL INTERNACIONAL DE ARQUITECTURA, CINE Y NUEVAS TECNOLOGIAS</div>
+        <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #000000; /* Fondo negro */
+            color: #FFFFFF; /* Texto blanco */
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            padding: 20px;
+        }
+        .title {
+            font-size: 1 em;
+            margin-top: 20px;
+        }
+        .countdown {
+            font-size: 4em;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">9 de diciembre 2024</div>
+        <div class="countdown" id="countdown"></div>
+    </div>
+
+    <script>
+        // Fecha del evento
+        const eventDate = new Date("2024-12-09T00:00:00").getTime();
+
+        // Actualizar la cuenta atrás cada segundo
+        const countdownFunction = setInterval(function() {
+            const now = new Date().getTime();
+            const distance = eventDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("countdown").innerHTML = days + "d " + hours + "h " +
+                minutes + "m " + seconds + "s ";
+
+            if (distance < 0) {
+                clearInterval(countdownFunction);
+                document.getElementById("countdown").innerHTML = "¡El evento ha comenzado!";
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
+        <div class="more-info">
+            <a href="organizacion.ficarq@gmail.com" target="_blank">Más información sobre FICARQ´24 organización.ficarq@gmail.com</a>
+        </div>
+    </div>
+
+    <script>
+        // Fecha del evento
+        const eventDate = new Date("2024-07-01T00:00:00").getTime();
+
+        // Actualizar la cuenta atrás cada segundo
+        const countdownFunction = setInterval(function() {
+            const now = new Date().getTime();
+            const distance = eventDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("countdown").innerHTML = days + "d " + hours + "h " +
+                minutes + "m " + seconds + "s ";
+
+            if (distance < 0) {
+                clearInterval(countdownFunction);
+                document.getElementById("countdown").innerHTML = "¡La cuenta atrás  ha comenzado!";
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
